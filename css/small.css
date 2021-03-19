@@ -19,3 +19,12 @@
 .fourth-product {
     background-image: url('../img/main4-medium.jpg');
 }
+
+/* FOOTER */
+footer {
+    font-size: 20px;
+}
+
+.foot-icon i {
+    font-size: 20px;
+}

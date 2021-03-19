@@ -4,8 +4,15 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    background: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0) 75%, 
+    rgb(194, 192, 192) 95%);
 }
 
 .hero-bg {
@@ -22,11 +29,14 @@ body {
 
 /* NAVIAGTION */
 nav {
+    position: sticky;
+    top: 0;
     height: 60px;
     line-height: 60px;
     background-color: rgb(194, 192, 192);
     text-align: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 .nav-mobile {
@@ -78,48 +88,29 @@ nav {
     font-size: 14px;
 }
 
-@media (min-width: 450px) {
-
-    .header-text h1 {
-        margin-bottom: 10px;
-        font-size: 36px;
-    }
-
-    .header-text p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 450px) and (min-width: 315px) {
-
-    .header-text h1 {
-        margin-bottom: 6px;
-        font-size: 26px;
-    }
-
-    .header-text p {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 315px) and (min-width: 0px) {
-
-    .header-text h1 {
-        margin-bottom: 4px;
-        font-size: 22px;
-    }
-
-    .header-text p {
-        font-size: 11px;
-    }
-}
-
 /* MAIN */
+section {
+    margin: 60px 0;
+}
+
 main h2 {
     font-size: 28px;
     margin: 20px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.underline {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -5px;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(0, 153, 255);
 }
 
 .about-us p {
@@ -133,12 +124,17 @@ main h2 {
 
 .main-product {
     position: relative;
-    height: 300px;
+    height: 260px;
     width: 100%;
     display: inline-block;
     background-size: cover;
     background-position: center;
 }
+
+.main-product:hover .product-text h3 {
+    transform: scale(1.2);
+}
+
 
 .first-product {
     background-image: url('../img/main1-small.jpg');
@@ -168,7 +164,109 @@ main h2 {
 }
 
 .product-text h3 {
-    font-size: 22px;
+    font-size: 27px;
     margin-bottom: 5px;
     text-transform: uppercase;
+    transition: transform 0.4s;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 160%;
+}
+
+/* FOOTER */
+footer {
+    height: 90px;
+    color: #000;
+    background-color: rgb(194, 192, 192);
+    line-height: 90px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.foot-icon {
+    margin-left: 10px;
+}
+
+.foot-icon i {
+    padding: 0 5px;
+    color: #000;
+    font-size: 24px;
+    transition: color .3s;
+}
+
+.foot-icon i:hover {
+    color: rgb(0,134,243);
+}
+
+@media (min-width: 450px) {
+
+    .header-text h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+    
+    .foot-icon i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 315px) {
+
+    .header-text h1 {
+        margin-bottom: 6px;
+        font-size: 26px;
+    }
+
+    .header-text p {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+    
+    .foot-icon i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 315px) and (min-width: 0px) {
+
+    .header-text h1 {
+        margin-bottom: 4px;
+        font-size: 22px;
+    }
+
+    .header-text p {
+        font-size: 11px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+    
+    .foot-icon i {
+        font-size: 18px;
+    }
 }
