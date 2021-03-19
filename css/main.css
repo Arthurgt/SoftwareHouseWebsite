@@ -8,8 +8,19 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* NAVIAGTION */
+.hero-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* NAVIAGTION */
 nav {
     height: 60px;
     line-height: 60px;
@@ -32,4 +43,132 @@ nav {
 
 .nav-desktop {
     display: none;
+}
+
+/* HEADER */
+.header-img {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    background-image: url('../img/header-small.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 153, 255);
+}
+
+.header-text h1 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header-text span {
+    color: rgb(0, 140, 255);
+}
+
+.header-text p {
+    font-size: 14px;
+}
+
+@media (min-width: 450px) {
+
+    .header-text h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 315px) {
+
+    .header-text h1 {
+        margin-bottom: 6px;
+        font-size: 26px;
+    }
+
+    .header-text p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 315px) and (min-width: 0px) {
+
+    .header-text h1 {
+        margin-bottom: 4px;
+        font-size: 22px;
+    }
+
+    .header-text p {
+        font-size: 11px;
+    }
+}
+
+/* MAIN */
+main h2 {
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    padding: 0 20px;
+}
+
+.products {
+    text-align: center;
+    font-size: 0;
+}
+
+.main-product {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+.first-product {
+    background-image: url('../img/main1-small.jpg');
+}
+
+.second-product {
+    background-image: url('../img/main2-small.jpg');
+}
+
+.third-product {
+    background-image: url('../img/main3-small.jpg');
+}
+
+.fourth-product {
+    background-image: url('../img/main4-small.jpg');
+}
+
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 153, 255);
+    font-size: 16px;
+}
+
+.product-text h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }

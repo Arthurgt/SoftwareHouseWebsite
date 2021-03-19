@@ -1,1 +1,21 @@
-/* @media (min-width: 576px) {  } */
+/*min-width: 576px*/
+
+.header-img {
+    background-image: url('../img/header-medium.jpg');
+}
+
+.first-product {
+    background-image: url('../img/main1-medium.jpg');
+}
+
+.second-product {
+    background-image: url('../img/main2-medium.jpg');
+}
+
+.third-product {
+    background-image: url('../img/main3-medium.jpg');
+}
+
+.fourth-product {
+    background-image: url('../img/main4-medium.jpg');
+}

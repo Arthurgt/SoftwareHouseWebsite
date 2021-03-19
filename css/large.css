@@ -1,1 +1,22 @@
-/* @media (min-width: 992px) {  } */
+/*min-width: 992px*/
+
+.header-img {
+    background-image: url('../img/header-large.jpg');
+    background-size: cover;
+}
+
+.first-product {
+    background-image: url('../img/main1-large.jpg');
+}
+
+.second-product {
+    background-image: url('../img/main2-large.jpg');
+}
+
+.third-product {
+    background-image: url('../img/main3-large.jpg');
+}
+
+.fourth-product {
+    background-image: url('../img/main4-large.jpg');
+}

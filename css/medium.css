@@ -1,5 +1,4 @@
-/* @media (min-width: 768px) {  }*/
-
+/*min-width: 768px)*/
 .nav-mobile {
     display: none;
 }
@@ -24,4 +23,18 @@
 
 .nav-desktop li a:hover {
     color: rgb(0, 153, 255);
+}
+
+/* HEADER */
+.header-text h1 {
+    font-size: 46px;
+}
+
+.header-text p {
+    font-size: 20px;
+}
+
+/* MAIN */
+.main-product {
+    width: 45%;
 }
