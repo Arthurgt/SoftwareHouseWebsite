@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAVIAGTION */
+
+nav {
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(194, 192, 192);
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-mobile {
+    margin-right: 100%;
+}
+
+.nav-mobile button {
+    padding: 0 30px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-desktop {
+    display: none;
+}
